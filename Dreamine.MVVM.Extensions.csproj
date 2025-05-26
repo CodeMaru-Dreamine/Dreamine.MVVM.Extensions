@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 
     <PackageId>Dreamine.MVVM.Extensions</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Dreamine Core Team</Authors>
     <Company>Dreamine</Company>
     <Description>Dreamine MVVM 개발을 위한 확장 메서드 모음입니다. LINQ, ICommand, Observable 유틸 등이 포함됩니다.</Description>
@@ -16,7 +16,7 @@
     <Title>Dreamine.MVVM.Extensions</Title>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Copyright>© 2025 Dreamine Core Team. All rights reserved.</Copyright>
-    <PackageProjectUrl>https://github.com/CodeMaru-Dreamine/Dreamine.MVVM.Extensions</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/CodeMaru-Dreamine/Dreamine.MVVM.FullKit</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
