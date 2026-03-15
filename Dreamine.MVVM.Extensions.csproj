@@ -18,23 +18,15 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Copyright>© 2025 Dreamine Core Team. All rights reserved.</Copyright>
     <PackageProjectUrl>https://github.com/CodeMaru-Dreamine/Dreamine.MVVM.FullKit</PackageProjectUrl>
-    <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\..\..\Document\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\..\.Templates\Dreamine.MVVM.Template\icon.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Dreamine.MVVM.Locators.Wpf\Dreamine.MVVM.Locators.Wpf.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Locators.Wpf\Dreamine.MVVM.Locators.Wpf.csproj" />
+	</ItemGroup>
 
 </Project>
