@@ -3,7 +3,7 @@
 
 Dreamine MVVM 프레임워크에서 사용하는 **유틸리티 확장 패키지**입니다.
 
-이 패키지는 Dreamine MVVM 인프라와 WPF 런타임을 연결할 때 필요한 작은 헬퍼 기능들을 제공합니다.
+이 패키지는 플랫폼에 종속되지 않는 작은 헬퍼 기능을 위한 공간입니다.
 
 [➡️ English Version](./README.md)
 
@@ -11,7 +11,7 @@ Dreamine MVVM 프레임워크에서 사용하는 **유틸리티 확장 패키지
 
 ## 목적
 
-`Dreamine.MVVM.Extensions`는 Dreamine MVVM 구성 요소의 동작을 보조하는 유틸리티 클래스를 제공합니다.
+`Dreamine.MVVM.Extensions`는 WPF 전용 의존성을 만들지 않는 범위에서 Dreamine MVVM 구성 요소의 동작을 보조하는 유틸리티 클래스를 제공합니다.
 
 핵심 프레임워크 로직과 분리된 **작은 헬퍼 기능들을 모아놓은 패키지**입니다.
 
@@ -19,21 +19,7 @@ Dreamine MVVM 프레임워크에서 사용하는 **유틸리티 확장 패키지
 
 ## 주요 구성 요소
 
-### RegionBinderHelper
-
-Region 기반 네비게이션 시스템에서 사용하는 헬퍼 클래스입니다.
-
-주요 역할:
-
-- Region 바인딩 로직 보조
-- 네비게이션 관련 작업 단순화
-- WPF Region 인프라 지원
-
-사용 예시:
-
-```csharp
-RegionBinderHelper.SomeUtilityMethod();
-```
+WPF 전용 helper 는 이 패키지에 두지 않습니다. Region 및 visual tree helper 는 `Dreamine.MVVM.Locators.Wpf` 패키지에 둡니다.
 
 ---
 
@@ -53,16 +39,12 @@ Extensions 패키지는 핵심 MVVM 인프라를 깔끔하게 유지하기 위�
 ## Dreamine MVVM 구조 내 위치
 
 ```
-Dreamine.MVVM.Interfaces
-        ↑
-Dreamine.MVVM.Locators
-        ↑
-Dreamine.MVVM.Locators.Wpf
-        ↑
 Dreamine.MVVM.Extensions
+        ↓
+플랫폼 중립 Dreamine 모듈
 ```
 
-상위 모듈을 보조하는 유틸리티 레이어 역할을 합니다.
+WPF 통합 패키지에 의존하지 않는 보조 유틸리티 레이어 역할을 합니다.
 
 ---
 

@@ -1,9 +1,9 @@
 
 # Dreamine.MVVM.Extensions
 
-Utility extensions for the Dreamine MVVM framework.
+Utility extension package for the Dreamine MVVM framework.
 
-This package provides helper utilities that simplify integration between the Dreamine MVVM infrastructure and WPF runtime components.
+This package is reserved for small, platform-neutral helper utilities.
 
 [➡️ 한국어 문서 보기](./README_ko.md)
 
@@ -11,7 +11,7 @@ This package provides helper utilities that simplify integration between the Dre
 
 ## Purpose
 
-`Dreamine.MVVM.Extensions` contains small but useful helper classes that extend the behavior of the core Dreamine MVVM components.
+`Dreamine.MVVM.Extensions` contains small helper classes that extend the behavior of the core Dreamine MVVM components without introducing WPF-specific dependencies.
 
 These utilities are intentionally lightweight and independent so they can be reused across different Dreamine modules.
 
@@ -19,21 +19,7 @@ These utilities are intentionally lightweight and independent so they can be reu
 
 ## Key Components
 
-### RegionBinderHelper
-
-Helper utilities used by region navigation systems.
-
-Responsibilities include:
-
-- assisting region binding logic
-- simplifying navigation-related operations
-- supporting WPF region infrastructure
-
-Typical usage:
-
-```csharp
-RegionBinderHelper.SomeUtilityMethod();
-```
+No WPF-specific helpers live in this package. Region and visual-tree helpers belong to `Dreamine.MVVM.Locators.Wpf`.
 
 ---
 
@@ -55,16 +41,12 @@ Extensions are placed in a separate package so the core MVVM infrastructure rema
 Within the Dreamine MVVM ecosystem this package belongs to the **Utility Layer**.
 
 ```
-Dreamine.MVVM.Interfaces
-        ↑
-Dreamine.MVVM.Locators
-        ↑
-Dreamine.MVVM.Locators.Wpf
-        ↑
 Dreamine.MVVM.Extensions
+        ↓
+Platform-neutral Dreamine modules
 ```
 
-It provides supporting helpers used by higher-level modules.
+It provides supporting helpers without depending on WPF integration packages.
 
 ---
 

@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net8.0-windows</TargetFramework>
-		<UseWPF>true</UseWPF>
+		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
@@ -10,8 +9,8 @@
 		<Version>1.0.4</Version>
 		<Authors>Dreamine Core Team</Authors>
 		<Company>Dreamine</Company>
-		<Description>Common extension utilities for Dreamine MVVM, including LINQ, ICommand, and observable helpers.</Description>
-		<PackageTags>dreamine;mvvm;extensions;linq;icommand;observable</PackageTags>
+		<Description>Platform-neutral extension utilities for Dreamine MVVM.</Description>
+		<PackageTags>dreamine;mvvm;extensions;utilities</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryUrl>https://github.com/CodeMaru-Dreamine/Dreamine.MVVM.Extensions</RepositoryUrl>
 		<Title>Dreamine.MVVM.Extensions</Title>
@@ -25,10 +24,6 @@
 	<ItemGroup>
 		<None Include="README.md" Pack="true" PackagePath="\" />
 		<None Include="icon.png" Pack="true" PackagePath="\" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<ProjectReference Include="..\Locators.Wpf\Dreamine.MVVM.Locators.Wpf.csproj" />
 	</ItemGroup>
 
 </Project>
